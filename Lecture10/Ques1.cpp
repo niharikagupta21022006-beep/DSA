@@ -1,26 +1,18 @@
 #include<iostream>
 using namespace std;
+
+int getsum(int arr[],int n){
+    cout << endl << "Size : " << sizeof(arr) << endl;
+
+    int sum = 0;
+    for(int i = 0;i<n;i++){
+        sum += i[arr];
+    }
+    return sum;
+}
 int main(){
-
-    // int num = 5;
-    // cout << num << endl;
-    // int*p = &num;
-
-    // cout << "Address of num is " << *p << endl; 
-
-    int num = 5;
-    int a = num;
-    cout << " a before " << num << endl;
-    a++;
-    cout << " a after " << num << endl;
-
-    int *p = &num;
-    cout << "before" << num << endl;
-    (*p)++;
-    cout << "after" << num << endl;
-
-    // copying a pointer
-
-    
+    int arr[5] = {1,2,3,4,5};
+    cout << "Sum is " << getsum(arr,5) << endl;
     return 0;
+
 }
